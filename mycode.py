@@ -14,6 +14,13 @@ df = pd.DataFrame(data)
 df.loc[len(df)] = {'Name': 'GF1', 'Age': 20, 'City': 'City1'}
 df.loc[len(df)] = {'Name': 'GF2', 'Age': 30, 'City': 'City2'}
 
+#creating a new dataFrame
+
+new_ro={'Name':'m2','Age':40,'City':'City3'}
+df.loc[len(df.index)]=new_ro
+new_ro2={'Name':'m3','Age':50,'City':'City4'}
+df.loc[len(df.index)]=new_ro2
+
 # Create data directory
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
